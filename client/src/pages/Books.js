@@ -12,7 +12,6 @@ import { DELETE_BOOK, LOAD_BOOKS, TOGGLE_FAV } from '../store/actions';
 
 function Books() {
     // Initialize books as an empty array
-    const [message, setMessage] = useState({ error: true, text: '' });
     const [formObject, setFormObject] = useState({
         title: 'a title',
         author: 'an author',
@@ -130,19 +129,6 @@ function Books() {
                     )}
                 </Col>
             </Row>
-            {message.text && (
-                <Row>
-                    <Col>
-                        <div
-                            className={`alert ${
-                                message.error ? 'alert-danger' : 'alert-success'
-                            }`}
-                        >
-                            {message.text}
-                        </div>
-                    </Col>
-                </Row>
-            )}
         </Container>
     );
 }
