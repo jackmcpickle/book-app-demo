@@ -33,7 +33,7 @@
     "eslint-plugin-react-hooks": "4.2.0",
     "eslint-plugin-testing-library": "3.10.1",
     "nodemon": "2.0.7",
-    "prettier": "2.2.1"
+    "prettier": "2.7.1"
   },
   "dependencies": {
     "dotenv": "8.2.0",
